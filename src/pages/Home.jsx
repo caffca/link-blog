@@ -53,7 +53,7 @@ const statIcons = {
 
 export default function Home() {
   const featuredArticles = articles.slice(0, 3)
-  const hotResources = allResources.filter((r) => r.file).slice(0, 4)
+  const hotResources = allResources.filter((r) => r.file || r.url).slice(0, 4)
 
   return (
     <div>

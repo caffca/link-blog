@@ -20,7 +20,7 @@ export default function Resources() {
     )
   }, [query])
 
-  const availableCount = allResources.filter((r) => r.file).length
+  const availableCount = allResources.filter((r) => r.file || r.url).length
 
   return (
     <div>
@@ -105,7 +105,7 @@ export default function Resources() {
                     </span>
                     <div className="h-px flex-1 bg-slate-200" />
                     <span className="text-xs text-slate-400">
-                      {cat.items.filter((i) => i.file).length}/
+                      {cat.items.filter((i) => i.file || i.url).length}/
                       {cat.items.length} 可下载
                     </span>
                   </div>

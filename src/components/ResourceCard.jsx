@@ -1,4 +1,4 @@
-import { Archive, Database, Download, FileText } from 'lucide-react'
+import { Archive, Database, Download, ExternalLink, FileText } from 'lucide-react'
 
 const baseUrl = import.meta.env.BASE_URL
 
@@ -11,6 +11,7 @@ const formatIcons = {
 
 export default function ResourceCard({ item }) {
   const hasFile = !!item.file
+  const hasUrl = !!item.url
   const Icon = formatIcons[item.format] || Database
 
   return (
@@ -39,6 +40,15 @@ export default function ResourceCard({ item }) {
             className="inline-flex items-center gap-1.5 rounded-lg bg-accent px-3 py-1.5 text-xs font-medium text-white transition-colors hover:bg-accent-dark"
           >
             <Download className="h-3.5 w-3.5" /> 下载
+          </a>
+        ) : hasUrl ? (
+          <a
+            href={item.url}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-1.5 rounded-lg bg-primary px-3 py-1.5 text-xs font-medium text-white transition-colors hover:bg-primary-light"
+          >
+            <ExternalLink className="h-3.5 w-3.5" /> 官网
           </a>
         ) : (
           <span className="rounded-lg bg-slate-100 px-3 py-1.5 text-xs text-slate-400">
