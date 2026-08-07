@@ -14,3 +14,11 @@ Thumbs.db
 # 备份
 *.bak
 *.backup
+
+# Node
+node_modules/
+dist/
+*.local
+
+# Claude Code
+.claude/
