@@ -22,3 +22,6 @@ dist/
 
 # Claude Code
 .claude/
+
+# 本地历史归档（旧站资料，仅本地备份，不推送）
+docs/history/
