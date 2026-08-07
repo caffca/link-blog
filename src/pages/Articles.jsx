@@ -81,7 +81,7 @@ export default function Articles() {
             <Inbox className="mx-auto mb-4 h-14 w-14 text-slate-300" />
             <h3 className="text-lg font-semibold text-slate-700">暂无文章</h3>
             <p className="mt-1 text-sm text-slate-500">
-              试试调整搜索条件或选择其他分类
+              文章资料整理中，敬请期待
             </p>
           </div>
         )}

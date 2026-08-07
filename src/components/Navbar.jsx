@@ -6,7 +6,7 @@ const navLinks = [
   { to: '/', label: '首页' },
   { to: '/articles', label: '技术文章' },
   { to: '/resources', label: '资料下载' },
-  { to: '/about', label: '关于协会' },
+  { to: '/about', label: '关于' },
   { to: '/contact', label: '联系方式' },
 ]
 
@@ -25,7 +25,7 @@ export default function Navbar() {
             <Zap className="h-5 w-5" />
           </span>
           <span className="text-lg font-bold tracking-tight text-primary">
-            电子协会资料库
+            linkk
           </span>
         </Link>
 

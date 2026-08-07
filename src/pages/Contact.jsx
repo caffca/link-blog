@@ -1,17 +1,11 @@
-import { Github, Mail, MapPin, MessageSquare, Send, Users } from 'lucide-react'
+import { Github, Mail, MessageSquare, Send, User } from 'lucide-react'
 
 const contactCards = [
   {
     icon: Mail,
     title: '邮箱',
-    lines: ['link@example.com'],
+    lines: ['xinmenghhh@163.com'],
     note: '欢迎来信交流技术问题',
-  },
-  {
-    icon: MapPin,
-    title: '地址',
-    lines: ['校园嵌入式实验室', '电子协会活动室'],
-    note: '欢迎来实验室参观交流',
   },
   {
     icon: Github,
@@ -31,9 +25,9 @@ export default function Contact() {
             <span className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm ring-1 ring-white/20">
               <MessageSquare className="h-4 w-4 text-amber-300" /> 联系方式
             </span>
-            <h1 className="text-3xl font-bold md:text-4xl">联系我们</h1>
+            <h1 className="text-3xl font-bold md:text-4xl">联系我</h1>
             <p className="mt-3 text-slate-300">
-              有任何问题或建议，欢迎随时联系我们，我们期待与你交流。
+              有任何问题或建议，欢迎随时联系交流。
             </p>
           </div>
         </div>
@@ -41,7 +35,7 @@ export default function Contact() {
 
       {/* 联系卡片 */}
       <section className="section-pad container-page">
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="mx-auto grid max-w-3xl grid-cols-1 gap-6 md:grid-cols-2">
           {contactCards.map((c) => (
             <div key={c.title} className="card p-6 text-center">
               <span className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-accent to-primary text-white shadow-md">
@@ -63,24 +57,21 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* 反馈 */}
+      {/* 交流 */}
       <section className="section-pad bg-white">
         <div className="container-page">
           <div className="mx-auto max-w-2xl text-center">
             <span className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-accent to-primary text-white shadow-md">
-              <Users className="h-6 w-6" />
+              <User className="h-6 w-6" />
             </span>
             <h2 className="text-2xl font-bold text-primary md:text-3xl">
-              加入我们
+              一起交流
             </h2>
             <p className="mt-3 text-slate-500">
-              电子协会欢迎每一位热爱电子的同学！无论你是初学者还是有经验的老手，都能在这里找到属于自己的舞台。
+              欢迎通过邮箱与我交流技术问题、分享经验，或者对本站提出建议。
             </p>
-            <a
-              href="mailto:link@example.com"
-              className="btn-primary mt-8"
-            >
-              <Send className="h-4 w-4" /> 发送邮件联系我们
+            <a href="mailto:xinmenghhh@163.com" className="btn-primary mt-8">
+              <Send className="h-4 w-4" /> 发送邮件联系我
             </a>
           </div>
         </div>

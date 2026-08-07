@@ -137,8 +137,8 @@ export const resourceCategories = [
     items: [
       {
         id: 'textbook',
-        name: '电子协会教材（最新版）',
-        description: '电子协会最新教材，包含电子技术基础知识',
+        name: 'linkk 教材（最新版）',
+        description: '最新版教材，包含电子技术基础知识',
         file: 'docs/3_电子协会教材（最新版）.pdf',
         size: '3.2 MB',
         format: 'PDF',
@@ -239,12 +239,12 @@ export const resourceCategories = [
   },
   {
     name: '官方文档',
-    description: '协会资料与工具库',
+    description: '文档与工具库',
     items: [
       {
         id: 'annual-report',
-        name: '协会 2024 年度总结报告',
-        description: '电子协会 2024 年度工作总结报告，包含活动回顾和财务明细',
+        name: '2024 年度总结报告',
+        description: '2024 年度工作总结报告，包含活动回顾和财务明细',
         format: 'PDF',
       },
       {
