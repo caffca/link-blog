@@ -45,6 +45,14 @@ export default function Navbar() {
               {l.label}
             </NavLink>
           ))}
+          <a
+            href="https://caffca.github.io/resume/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-sm font-medium text-slate-600 transition-colors hover:text-accent"
+          >
+            简历
+          </a>
         </div>
 
         <button
@@ -74,6 +82,15 @@ export default function Navbar() {
               {l.label}
             </NavLink>
           ))}
+          <a
+            href="https://caffca.github.io/resume/"
+            target="_blank"
+            rel="noreferrer"
+            onClick={() => setOpen(false)}
+            className="block rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50"
+          >
+            简历
+          </a>
         </div>
       )}
     </header>

@@ -36,6 +36,16 @@ export default function Footer() {
                   关于
                 </Link>
               </li>
+              <li>
+                <a
+                  href="https://caffca.github.io/resume/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="transition-colors hover:text-accent"
+                >
+                  个人简历
+                </a>
+              </li>
             </ul>
           </div>
 
